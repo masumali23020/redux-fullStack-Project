@@ -12,8 +12,6 @@ export default function Task({task}) {
    const [deleteTask, { isSuccess: isDeleteSuccess, isError: isDeleteError, isLoading }] = useDeletTaskMutation();
    const [updateStatus] = useUpdateStatusMutation();
 
-   // getting month and day from deadline using custom hook
-  //  const { day, month } = useGetMonthAndDay(deadline);
 
 
    const [statusValue, setStatusValue] = useState(status);
